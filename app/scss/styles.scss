@@ -1,0 +1,115 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+
+body{
+    background-color: $backdrop;
+   
+}
+
+p, h1, h2, h3, h4, h5{
+    font-family: Poppins;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+body, h1{
+    color: $text-color
+}
+
+.patch{
+    background-color: $demo-color;
+    padding-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 5px;
+    width: 100%;
+    background-color: $header-footer-color;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+footer{
+    p{
+        margin-bottom: 7px;
+    }
+}
+
+.space-row{
+    background-color: $box-color;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.space-col{
+    background-color: $background-color;
+    margin: 5px;
+    padding: 5px;
+}
+
+.GrubButton{
+    max-width: 100%;
+
+    height: auto; 
+}
+
+.home-banner-img{
+    max-width: 540px;
+    height: auto;
+    margin: auto;
+}
+
+.header-banner{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+.header-row{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: $header-footer-color;
+}
+
+.main-body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carousel-caption{
+    height: 100px;
+    padding-top: 5px;
+}
+
+.line{
+        margin: 5px;
+        color: #000000d8;
+    }
+
+.form-css{
+    max-width: 700px;
+    margin: auto;
+}
