@@ -1,10 +1,26 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables';
 
-body{
+
+@mixin transparent-overlay($overlay-color, $alpha) {
+    position: relative; 
+    &:after {
+      content: ""; 
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($overlay-color, $alpha); 
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  
+
+  body {
     background-color: $backdrop;
-   
-}
+  }
 
 p, h1, h2, h3, h4, h5{
     font-family: Poppins;
@@ -42,6 +58,7 @@ footer{
     background-color: $box-color;
     margin: 10px;
     padding: 10px;
+    @include transparent-overlay(#ffffff, 0.04);
 }
 
 
@@ -49,6 +66,10 @@ footer{
     background-color: $background-color;
     margin: 5px;
     padding: 5px;
+
+    p{
+        padding: 10px;
+    };
 }
 
 .GrubButton{
@@ -83,6 +104,7 @@ footer{
 
 .carousel-caption{
     background-color: rgba(0, 0, 0, 0.637);
+    
 }
 
 .header-row{
@@ -112,4 +134,34 @@ footer{
 .form-css{
     max-width: 700px;
     margin: auto;
+}
+
+/* Menu Button css */
+.button-container {
+    margin-top: 20px;
+}
+    
+.menu-button {
+    padding: 0px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu-img, #imageDescription {
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-img{
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
 }
