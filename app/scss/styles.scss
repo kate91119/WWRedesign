@@ -1,0 +1,167 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+
+
+@mixin transparent-overlay($overlay-color, $alpha) {
+    position: relative; 
+    &:after {
+      content: ""; 
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($overlay-color, $alpha); 
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  
+
+  body {
+    background-color: $backdrop;
+  }
+
+p, h1, h2, h3, h4, h5{
+    font-family: Poppins;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+body, h1{
+    color: $text-color
+}
+
+.patch{
+    background-color: $demo-color;
+    padding-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 5px;
+    width: 100%;
+    background-color: $header-footer-color;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+footer{
+    p{
+        margin-bottom: 7px;
+    }
+}
+
+.space-row{
+    background-color: $box-color;
+    margin: 10px;
+    padding: 10px;
+    @include transparent-overlay(#ffffff, 0.04);
+}
+
+
+.space-col{
+    background-color: $background-color;
+    margin: 5px;
+    padding: 5px;
+
+    p{
+        padding: 10px;
+    };
+}
+
+.GrubButton{
+    max-width: 100%;
+
+    height: auto; 
+}
+
+.home-banner-img{
+    max-width: 540px;
+    height: auto;
+    margin: auto;
+}
+
+.header-banner{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.637);
+    
+}
+
+.header-row{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: $header-footer-color;
+}
+
+.main-body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carousel-caption{
+    height: 100px;
+    padding-top: 5px;
+}
+
+.line{
+        margin: 5px;
+        color: #000000d8;
+    }
+
+.form-css{
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Menu Button css */
+.button-container {
+    margin-top: 20px;
+}
+    
+.menu-button {
+    padding: 0px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu-img, #imageDescription {
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-img{
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
+}

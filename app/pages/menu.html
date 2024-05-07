@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weiner Works - Menu</title>
+  <meta charset="utf-8">
+  <meta name="description" content=" A restaurant specializing in hot dogs, sausages, and kraut dogs. We also serve 100% real beef burgers. We cut fresh fries to order from real potatoes. We serve very large portions. We have an extremely large selection of beer, and it changes as brands come and go, so you can expect something new occasionally. We sell $2 pints all day every day (Sierra Nevada $2.50). Did we mention we serve very large portions?">
+  <meta name="keywords" content=" hot dog, hot dogs, hot, dog, dogs, weiner, weiners, wiener, wieners, kraut dog, kraut, cabbage dog, mad cow burger, mad, cow, burger, fries, fresh, huge portions, huge, portions, yummy, food, restaurant, good, chow, ball game, sports, bar, beer, brew, brewski, booze, liquor, pepsi, coke, mountain dew, sprite, dads, soda, root beer, fun, tv, friends, eat, dinner ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <script>
+// Script for main img/desciption change
+    function changeImageAndDescription(imageUrl, descriptionText) {
+        document.getElementById('mainImage').src = imageUrl;
+        document.getElementById('imageDescription').textContent = descriptionText;
+    }
+</script>
+</head>
+
+<body>
+  <header class="header-row">   
+    <nav>   
+        <div>
+          <a href="../index.html"><img src="../pages/media/Wiener Works Name.png" class="header-banner patch" alt="Weiner Works Banner Logo"></a>
+        </div>
+        <div class="row patch">
+            <ul class="nav nav-pills col">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="container-fluid search-bar col">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary active" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+        
+    </nav>
+ 
+</header>
+
+<main class="main-body">
+  <p></p>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Due to the pandemic there is a shortage of pastrami, so we are no longer offering the pastrami dog. We apologize for the inconvenience.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  
+  
+  <div class="space-row row"> <h1>Menu Items</h1>
+        <img class="menu-img space-col col-6" id="mainImage" src="media/ww38.jpg" alt="Dafault Image">
+        <p id="imageDescription" class="space-col col-6"><b>Dinner for the Whole Family!</b> <br> Sit and dine in, or order to go and take your food home!</p>
+  </div>
+
+  <div class="space-row">
+      <div class="space-col">
+        <div class="button-container">
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/top-left-menu.jpg', 'Our beer steamed hotdogs made fresh!')">
+              <img src="media/menu_images/top-left-menu.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/top-right-menu.jpg', 'Our specialty hotgods!')">
+              <img src="media/menu_images/top-right-menu.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/bottom-left-menu.jpg', 'Our 14in hotdog menu with prices listed')">
+              <img src="media/menu_images/bottom-left-menu.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/bottom-right-menu.jpg', 'Unique hotdogs, burger, and our fries!')">
+              <img src="media/menu_images/bottom-right-menu.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww15.jpg', '#38 - 14 inch chili cheese dog with all the additions   (Cheese, relish, onions, tomatoes, saurkraut, coleslaw, ketchup, and mustard)')">
+              <img src="media/menu_images/ww15.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww13.jpg', 'The Mad cow burger with all the additions   (Ketchup, mayo, tomato, onion, lettuce, and pickle chips.)')">
+              <img src="media/menu_images/ww13.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww17.jpg', 'The Mad cow burger with all the additions   (Ketchup, mayo, tomato, onion, lettuce, and pickle chips.)')">
+              <img src="media/menu_images/ww17.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww18.jpg', 'Large chili cheese onion fries')">
+              <img src="media/menu_images/ww18.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww19.jpg', 'Large chili cheese onion fries')">
+              <img src="media/menu_images/ww19.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww21.jpg', '#4 - Beer steamed 7 inch all beef dog with all the additions except cheese')">
+              <img src="media/menu_images/ww21.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww22.jpg', 'The Mad cow burger with all the additions   (Ketchup, mayo, tomato, onion, lettuce, and pickle chips.)')">
+              <img src="media/menu_images/ww22.jpg" alt="Button Image" class="button-img"></button>
+            <button class="menu-button" onclick="changeImageAndDescription('media/menu_images/ww34.jpg', 'Standard staple fries!')">
+              <img src="media/menu_images/ww34.jpg" alt="Button Image" class="button-img"></button>
+        </div>
+      </div>
+  </div>
+
+  <div>
+    <p>&nbsp;</p>
+  </div>
+</main>
+<footer>
+    <div>
+      <p>This is a redesign and not the official site, the original domain is <a href="http://weinerworksmadison.com">http://weinerworksmadison.com</a></p>
+    </div>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
